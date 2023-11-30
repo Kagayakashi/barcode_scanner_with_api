@@ -1,0 +1,292 @@
+* {
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+h6 {
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+textarea, input {
+    width: 140px;
+}
+
+div.container {
+    margin:auto;
+    background-color: #d7e0e3;
+    max-width: 600px;
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+
+div.img_logo img {
+    width: 75vw;
+    max-width: 300px;
+    margin:auto;
+    display: block;
+    padding-top: 5vh;
+}
+
+div.form_container {
+    width: 75vw;
+    max-width: 600px;
+    margin:auto;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+.title_block {
+    text-align: center;
+    margin-top: 80px;
+}
+
+div.nav_block {
+    position:relative;
+}
+
+div.nav_block .img_home,
+div.nav_block .img_exit {
+    position:absolute;
+}
+
+div.nav_block .img_home {
+    top: 20px;
+    left: 20px;
+}
+
+div.nav_block .img_exit {
+    top: 20px;
+    right: 20px;
+}
+
+div.nav_block div a img {
+    width: 36px;
+    height: 36px;
+}
+
+div.nav_block div a img:hover {
+    width: 40px;
+    height: 40px;
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+}
+
+textarea {
+    resize: none;
+    width: 90%;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid #0060a7;
+    background-color: #e5f0f9;
+    color: #044c82;
+    text-align: center;
+    outline: none;
+}
+
+textarea.editable {
+    height: 180px;
+    text-align: left;
+}
+
+#scan_camera {
+    text-align: center;
+    width: 75%;
+    height:200px;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 30px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+#video {
+    width: 100%;
+}
+
+.field_image {
+    max-width: 200px;
+    border: 1px solid darkslategray;
+}
+
+.image_block {
+    text-align: center;
+}
+
+.table_result {
+    text-align: center;
+}
+
+.field_data {
+    width: 95%;
+    margin:auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #cccbcb;
+}
+
+.field_value {
+    width: 90%;
+    height: 25px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid #0060a7;
+    background-color: #e5f0f9;
+    color: #044c82;
+    text-align: center;
+    outline: none;
+    word-break: break-word;
+}
+
+
+.label_block {
+    margin-bottom: 5px;
+    margin-top: 10px;
+    padding-bottom: 6px;
+    text-align: center;
+}
+
+.label_block label {
+    color: #044c82;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.submit_block {
+    padding-top: 30px;
+}
+
+.button_green {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  border-radius: 50px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 190px;
+  height: 50px;
+}
+
+.button_green:hover {
+  background-color: white; 
+  color: #4CAF50; /* Green */
+  border: 1px solid #4CAF50;
+  font-weight: 600;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+.button_blue {
+  background-color: #339DFF; /* Blue */
+  border: none;
+  border-radius: 50px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 190px;
+  height: 50px;
+}
+
+.button_blue:hover {
+  background-color: white;
+  color: #339DFF; /* Blue */
+  font-weight: 600;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  border: 1px solid #339DFF;
+}
+
+.button_red {
+  background-color: #d45252; /* red */
+  border: none;
+  border-radius: 50px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 190px;
+  height: 50px;
+}
+
+.button_red:hover {
+  background-color: white;
+  color: #d45252; /* red */
+  font-weight: 600;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  border: 1px solid #d45252;
+}
+
+.button_large {
+    width: 290px;
+}
+
+.flash_message {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    min-height: 20px;
+    border-radius: 10px;
+}
+
+.flash_message h6 {
+    margin: 0;
+}
+
+.flash_message.accept {
+    background-color: #94de97;
+}
+
+.flash_message.decline {
+    background-color: #f37676;
+}
+
+.readonly,
+.readonly:focus,
+.readonly:hover {
+    border: 0;
+    background-color: #d7e0e3;
+}
+
+div.how_to_camera {
+    margin-bottom: 10px;
+}
+
+div.how_to_camera,
+div.how_to_ean13 {
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+div.how_to_ean13 span,
+div.how_to_camera span {
+    font-size: 14px;
+}
+
+div.password_match {
+    text-align: center;
+}
